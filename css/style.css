@@ -468,6 +468,8 @@ input.custom-inputs::-webkit-input-placeholder{color: #B0B5BC;font-family: 'open
 .border-top-bottom::after{border-bottom: 1px solid #F4F5F7;bottom: 10px;}
 .border-top-bottom::before,.border-top-bottom::after{content: '';width: 100%;display: inline-block;position: absolute;left: 0;}
 /****** Account page css *******/
+.listing-steps-grid{max-width: 940px;margin: auto;}
+.listing-order > div {height: 66px;width: 66px;border-radius: 50px;background-color: #F4F5F8;border: 1px solid #E1E3E6;text-align: center;line-height: 66px;}
 /****************** Media Queries **************************/
 @media only screen and (max-width: 1200px)
 {
@@ -484,12 +486,13 @@ input.custom-inputs::-webkit-input-placeholder{color: #B0B5BC;font-family: 'open
     .banner-main-grid.left-padding{padding-left: 20px;}
 
 
-  .sidebar-canvas{position: fixed;z-index: 100;background: #fff;width: 350px;height: 100%;left: 0;margin-left: -350px;transition: .3s ease-in-out;}
+  .sidebar-canvas{overflow: auto;border-right:1px solid #CACFD833; position: fixed;z-index: 100;background: #fff;width: 350px;height: 100%;left: 0;margin-left: -350px;transition: .3s ease-in-out;}
   .active-sidebar .sidebar-canvas{display: block;margin-left: 0;}
   .rightside-canvas{flex: 100%;max-width: 100%;}
    .sidebar-toggle-btn{position: absolute;display: block;left: 20px;margin: 10px 0;}
-   .sidebar-toggle-btn.align-toggle-btn{left: 315px;position: fixed;}
+   .sidebar-toggle-btn.align-toggle-btn{left: 332px;position: fixed;}
    .dash-right-sec {padding: 50px 0 0 0;}
+   .buyer-sidebar-main{border:none;}
 }
 @media only screen and (max-width: 991px)
 {   
@@ -523,6 +526,7 @@ input.custom-inputs::-webkit-input-placeholder{color: #B0B5BC;font-family: 'open
       .edge-member .row > div {margin-bottom: 75px;}
       .custom-row{margin: 0 -15px;}
       .custom-row.dashboard-cards > div{padding: 0 15px;}
+      .recomended-sec h2, .edge-member h2{font-size: 20px;}
 
 }
 
@@ -552,6 +556,7 @@ input.custom-inputs::-webkit-input-placeholder{color: #B0B5BC;font-family: 'open
  .dashboard-brokers-main .slick-arrow{left: 0;right: 0;margin: auto;}
  .dashboard-brokers-main .slick-arrow.slick-prev{right: 20%;}
  .dashboard-brokers-main .slick-arrow.slick-next{right: -20%;}
+ .title-md{font-size: 24px;}
 
 }
 @media only screen and (max-width: 575px){
@@ -567,7 +572,7 @@ input.custom-inputs::-webkit-input-placeholder{color: #B0B5BC;font-family: 'open
     .nav-btns a{height: 30px;line-height: 25px;min-width: auto;padding: 0 15px;}
     .brokers-main-sec .custom-row > div{flex-basis: 100%;max-width: 100%;}
     .title-lg{font-size: 28px;}
-    .nav-btns{margin-right: 20px;}
+    .nav-btns{margin-right: 17px;}
     .nav-btns a{margin: 0 3px;}
     .site-header .navbar-brand{margin-right: 0;width: 70px;height: auto;}
     .banner-content{margin-top: 40px;}
