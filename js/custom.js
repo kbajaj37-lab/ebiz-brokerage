@@ -35,6 +35,25 @@ $(document).bind('click', function(e) {
 });
 
 
+$(".custom-drop-down .dropdown-selected a").click(function() {
+    $(".custom-drop-down .options ul").toggle();
+});
+
+//SELECT OPTIONS AND HIDE OPTION AFTER SELECTION
+$(".custom-drop-down .options ul li a").click(function() {
+    var text = $(this).html();
+    $(".custom-drop-down .dropdown-selected a span").html(text);
+    $(".custom-drop-down .options ul").hide();
+}); 
+
+
+//HIDE OPTIONS IF CLICKED ANYWHERE ELSE ON PAGE
+$(document).bind('click', function(e) {
+    var $clicked = $(e.target);
+    if (! $clicked.parents().hasClass("custom-drop-down"))
+        $(".custom-drop-down .options ul").hide();
+});
+
 $('.dashboard-brokers-main').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
