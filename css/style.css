@@ -239,7 +239,7 @@ p:empty {display: none;}
 .custom-inputs.account-inputs{color: #555B63;font-family: 'open_sansregular';}
 .inner-footer-content,.inner-help-sec,.listing-inner-sec,.business-inner-sec,.business-right-grid{margin-bottom: 20px;}
 .inner-help-sec img,.listing-img img,.business-img img,.Category-img img,.edge-video-sec img{width: 100%;}
-.sign-in-nav,.theme-yellow-btn,.footer-social-links a,.front-select,.pro-type ,.theme-blue-btn,.inner-busines-type {border-radius: 10px;-webkit-border-radius: 10px;-moz-border-radius: 10px;-o-border-radius: 10px;-ms-border-radius: 10px;}
+.sign-in-nav,.theme-yellow-btn,.footer-social-links a,.front-select,.pro-type ,.theme-blue-btn,.inner-busines-type,.back-btn {border-radius: 10px;-webkit-border-radius: 10px;-moz-border-radius: 10px;-o-border-radius: 10px;-ms-border-radius: 10px;}
 .business-list-main ul li a::after,.buyer-sidebar-main .top-sidebar-list > li a.right-arrow::after,.selected span::after,.front-select::after,.header-menu .nav-item .dropdown::after,.dropdown-toggle::before{content: "\f107";font-family: 'FontAwesome';}
 .common-description{font-size: 16px;color: #000000;max-width: 650px;margin: 20px auto 0;line-height: 28px;}
 .commom-descp-sm{font-size: 13px;line-height: 25px;}
@@ -483,6 +483,8 @@ select.custom-inputs + i,.input-fileds i{position: absolute;top: 0;bottom: 0;hei
 .steps-name::after{content: '';height: 4px;width: 215px;display: inline-block;background: #EEEEEE;position: absolute;top: 0;bottom: 0;margin: auto; left: 100%;}
 .steps-name.border-right-none::after{display: none;}
 .steps-name.active-step{background-color: #5C9EE0;color: #fff;}
+.steps-name.active-step + p{color: #5C9EE0;}
+.steps-name.done-step + p{color: #D89D3F;}
 .listing-form-outer{position: relative;border-top: 110px solid #F5F5F585;border-bottom: 110px solid #F5F5F585;border-left: 45px solid #F5F5F585;border-right: 45px solid #F5F5F585;}
 .listing-blue-btn.theme-blue-btn{min-width: 160px;height: auto;line-height: normal;padding: 10px;}
 .listing-top-btns{margin: -80px 0 40px;}
@@ -510,7 +512,7 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .continue-btn.save-btn{width: auto;padding: 0 20px;}
 .upload-button.form-btn{margin: 0;cursor: pointer;font-family: 'open_sansregular';}
 .pd-0{padding: 0;}
-
+.back-btn.listing-blue-btn.theme-blue-btn{background-color: #D3D5D6;color: #000;min-width: 120px;}
 .input-fileds .custom-inputs{padding-left: 50px;}
 .radio-container{display: inline-block;padding-left: 25px;margin-right:35px;font-size: 13px;color: #3B3B3B;}
 .radio-checkmark {position: absolute;top: 0;left: 0;height: 15px;width: 15px;background-color: #F4F5F8;border-radius: 50%;bottom: 0;margin: auto;border: 1px solid #6C829917;}
@@ -525,7 +527,8 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .checkmark {position: absolute;top: 5px;left: 0;height: 16px; width: 16px; background-color: #F4F5F8; border-radius: 4px;margin: auto;border: 1px solid #6C829917;}
 .checkmark:after {content: "";position: absolute;display: none;}
 .inner-listing-sec{padding: 0 35px;}
-
+.steps-name.done-step::after,.steps-name.done-step{background-color: #D89D3F;color: #fff;}
+.listing-main-form.second-step-form textarea{height: 80px;resize: none;}
 /****************** Create listing  ************************/
 /****************** Media Queries **************************/
 @media only screen and (max-width: 1200px)
@@ -617,7 +620,7 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .listing-bottom-btns,.listing-top-btns{text-align: center;margin: auto}
 .listing-form-outer{border: 25px solid #F5F5F585;padding: 20px 0;}
 .inner-listing-sec{padding: 0 15px;}  
-.property-price{flex-wrap: wrap;justify-content: center;}
+.property-price,.listing-top-btns,.listing-bottom-btns{flex-wrap: wrap;justify-content: center;}
 .business-list-main{height: 100vh;}
 
 }
