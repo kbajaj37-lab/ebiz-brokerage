@@ -210,6 +210,18 @@ p:empty {display: none;}
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'gothambold';
+    src: url('../fonts/gotham-bold-webfont.eot');
+    src: url('../fonts/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gotham-bold-webfont.woff') format('woff'),
+         url('../fonts/gotham-bold-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-bold-webfont.svg#gothambold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /************** Fonts *******************/
 
 /************** Common Css **************/
@@ -530,6 +542,13 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .steps-name.done-step::after,.steps-name.done-step{background-color: #D89D3F;color: #fff;}
 .listing-main-form.second-step-form textarea{height: 80px;resize: none;}
 /****************** Create listing  ************************/
+
+/*****************Business Valuation **********************/
+.Valuation-top-sec h2{font-family: 'gothambold';font-size: 23px;}
+
+
+
+/*****************Business Valuation **********************/
 /****************** Media Queries **************************/
 @media only screen and (max-width: 1200px)
 {
