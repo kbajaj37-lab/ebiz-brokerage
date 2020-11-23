@@ -509,11 +509,11 @@ select.custom-inputs + i,.input-fileds i{position: absolute;top: 0;bottom: 0;hei
 .businees-type-sec .nav-tabs .nav-link{font-size: 14px;color: #757575;}
 .businees-type-sec .nav-tabs .nav-link.active, .businees-type-sec .nav-tabs .nav-item.show .nav-link{background-color: #5C9EE0;color: #fff;border-radius: 11px;}
 .business-list-main{background-color: #F4F5F8;border-radius: 10px;height: 100%;padding: 10px 0;}
-.business-list-main  .business-menu   li a{color: #686A6E;font-size: 14px;padding: 10px 30px;display: block;position: relative;}
+.business-list-main    li a{color: #686A6E;font-size: 14px;padding: 10px 30px;display: block;position: relative;}
 .business-list-main  .business-menu  li  a:hover,.business-menu-active{background-color: #EBECF1;}
 .business-list-main  .business-menu  li  a::after{color: #AFAFAF;}
 .business-list-main .business-sub-menu li a::after{content: none;}
-.business-list-main .business-sub-menu{position: absolute;left: 100%;margin-left: 10px;width: 95%;z-index: 10;top: 0;}
+.business-list-main .business-sub-menu{display: none;}
 .theme-yellow-btn.add-btn{height: 36px;line-height: 31px;min-width: 145px;}
 .custom-pd{padding: 0 8px;}
 select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position: absolute;right: 20px;font-size: 20px;}
@@ -576,6 +576,16 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .product-name.recent-insight p{color: #747474;    display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;text-overflow: ellipsis;}
 .step-btn{min-width: 230px;height: 45px;line-height: 45px;}
 /*****************Sell a business ************************/
+
+/****************  Buy a business ************************/
+.learning-row.buy-business-row >div{width: 20%;}
+.seller-pic.understand-options{background-position: -4px -370px;height: 67px;}
+.seller-pic.right-business{background-position: -80px -370px;}
+.seller-pic.offer-pic{background-position: -151px -367px;}
+.seller-pic.financing{background-position: -219px -367px;}
+.learning-banner-sec{min-height: 500px;background-color: #4B9CEC;}
+
+/****************  Buy a business ************************/
 /****************** Media Queries **************************/
 @media only screen and (max-width: 1200px)
 {
@@ -617,7 +627,7 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
     .inner-menu-bar::before{top: unset;}
     .nav-btns{margin-left: 0;margin-right: 30px;}
     .brokers-main-sec .custom-row{flex-wrap: wrap;justify-content: center;}
-    .brokers-main-sec .custom-row > div{flex-basis: 33%;max-width: 33%;margin-bottom: 15px;}
+    .brokers-main-sec .custom-row > div,.learning-row.buy-business-row >div{flex-basis: 33%;max-width: 33%;margin-bottom: 15px;}
     .edge-member.dashboard-space,.dashboard-space,.common-space{padding: 30px 0;}
     .title-md{font-size: 28px;}
     .diamond-shape{right: 0;}
@@ -642,7 +652,7 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .inner-selext-box li{flex-basis: 100%;margin: 0 0 10px;}
 .inner-selext-box {flex-wrap: wrap;justify-content: center;}
 .title-lg{font-size: 35px;}
-.brokers-main-sec .custom-row > div{flex-basis: 50%;max-width: 50%;}
+.brokers-main-sec .custom-row > div,.learning-row.buy-business-row >div{flex-basis: 50%;max-width: 50%;}
 .index-order-1{order: 1;}
 .index-order-0{order: 0;}
 .business-right-grid{text-align: center;}
@@ -672,7 +682,7 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .seller-learning-center h3{margin-top: 30px;}
 .seller-learning-center{padding: 25px 15px;}
 .seller-learning-center,.product-name.recent-insight{min-height: auto;}
-.row.learning-row > div{margin: 0 0 20px;}
+.row.learning-row > div,.learning-row.buy-business-row >div{margin: 0 0 20px;}
 }
 @media only screen and (max-width: 575px){
 .dashboard-brokers-main .inner-block-grid{margin: 0 15px;}
@@ -693,7 +703,7 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 {
     .banner-tabs-outer .nav-item{width: 100%;}
     .nav-btns a{height: 30px;line-height: 29px;min-width: auto;padding: 0 12px;}
-    .brokers-main-sec .custom-row > div{flex-basis: 100%;max-width: 100%;}
+    .brokers-main-sec .custom-row > div,.learning-row.buy-business-row >div{flex-basis: 100%;max-width: 100%;}
     .title-lg{font-size: 28px;}
     .nav-btns{margin-right: 17px;}
     .input-group-text{line-height: normal;}
