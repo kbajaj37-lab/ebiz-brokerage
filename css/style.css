@@ -225,8 +225,9 @@ p:empty {display: none;}
 /************** Fonts *******************/
 
 /************** Common Css **************/
-.wrapper-md,.wrapper{max-width: 1330px;margin: 0 auto;padding: 0 30px;width: 100%;}
+.wrapper-md,.wrapper,.wrapper-sm{max-width: 1330px;margin: 0 auto;padding: 0 30px;width: 100%;}
 .wrapper-md{max-width: 1170px;}
+.wrapper-sm{max-width: 1030px;}
 .lh-normal,.custom-inputs.lh-normal{line-height: normal;}
 .outline-main{margin-bottom: -425px;min-height: 100%;}
 .text-20{font-size: 20px;}
@@ -238,7 +239,7 @@ p:empty {display: none;}
 .theme-yellow-btn:hover,.form-btn:hover{border:2px solid #d89d3f;color: #d89d3f;}
 .theme-blue-btn:hover{border: 2px solid #5C9EE0;color: #5C9EE0;}
 .nav-btns a,.select-box-title,.pro-type li span,a,.next-form-link + p,.checkbox-container,.inner-footer-content ul li a,.title-md,p,.regular{font-family: 'open_sansregular';}
-.header-menu .nav-item a,.nav-btns a,.regular-font{font-family: 'montserratregular';}
+.header-menu .nav-item a,.nav-btns a,.regular-font,.form-btn.regular-font{font-family: 'montserratregular';}
 .inner-selext-box .drop-down ul li a,.selected span{color: #292929;font-size: 15px;}
 .price-txt{font-size: 14px;}
 .price-txt,.boldfont,.title-lg.boldfont,.title-xs.boldfont{font-family: 'open_sansbold';}
@@ -317,13 +318,13 @@ input.custom-inputs::-webkit-input-placeholder{color: #B0B5BC;font-family: 'open
 .help-descrp,.product-name,.Category-name{padding: 15px;}
 .product-name > p{padding-right: 30px;font-size: 15px;}
 .help-img-sec img,.Category-img img{transition:.3s linear;-webkit-transition:.3s linear;-ms-transition:.3s linear;-o-transition:.3s linear;-moz-transition:.3s linear;}
-.Category-img,.help-img-sec,.listing-img,.business-img{border-radius: 15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;-o-border-radius: 15px;-ms-border-radius: 15px;overflow: hidden;}
+.learning-img,.Category-img,.help-img-sec,.listing-img,.business-img,.business-worth-img{border-radius: 15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;-o-border-radius: 15px;-ms-border-radius: 15px;overflow: hidden;}
 .help-img-sec:hover img,.Category-img:hover img{transform: scale(1.3);-ms-transform: scale(1.3);-webkit-transform: scale(1.3);-moz-transform: scale(1.3);-o-transform: scale(1.3);}
 .business-right-grid a:last-child{margin: 0 10px;}
 .spl-txt{margin: 30px 0 0 0;}
 .learn-more-link{color: #6C8299;}
 .product-name{display: flex;min-height: 125px;align-items: center;position: relative;}
-.listing-inner-sec,.Feature-list-sec .listing-inner-sec,.inner-category-sec,.business-inner-sec{display: inline-block;width: 100%;padding: 8px;box-shadow: 0px 5px 29px #CACFD833 !important;-webkit-box-shadow: 0px 5px 29px #CACFD833 !important;-ms-box-shadow: 0px 5px 29px #CACFD833 !important;-o-box-shadow: 0px 5px 29px #CACFD833 !important;-moz-box-shadow: 0px 5px 29px #CACFD833;border-radius: 20px;-webkit-border-radius: 20px;-moz-border-radius: 20px;-o-border-radius: 20px;-ms-border-radius: 20px; cursor: pointer;}
+.learning-main,.listing-inner-sec,.Feature-list-sec .listing-inner-sec,.inner-category-sec,.business-inner-sec,.business-worth-list li{display: inline-block;width: 100%;padding: 8px;box-shadow: 0px 5px 29px #CACFD833 !important;-webkit-box-shadow: 0px 5px 29px #CACFD833 !important;-ms-box-shadow: 0px 5px 29px #CACFD833 !important;-o-box-shadow: 0px 5px 29px #CACFD833 !important;-moz-box-shadow: 0px 5px 29px #CACFD833;border-radius: 20px;-webkit-border-radius: 20px;-moz-border-radius: 20px;-o-border-radius: 20px;-ms-border-radius: 20px; cursor: pointer;}
 .listing-inner-sec:hover,.Feature-list-sec .listing-inner-sec:hover,.business-inner-sec:hover{box-shadow: 0px 32px 30px #CACFD84D !important; }
 .Feature-catrgory-main h3{font-size: 18px;}
 .custom-row{margin: 0 -20px}
@@ -510,7 +511,7 @@ select.custom-inputs + i,.input-fileds i{position: absolute;top: 0;bottom: 0;hei
 .businees-type-sec .nav-tabs .nav-link.active, .businees-type-sec .nav-tabs .nav-item.show .nav-link{background-color: #5C9EE0;color: #fff;border-radius: 11px;}
 .business-list-main{background-color: #F4F5F8;border-radius: 10px;height: 100%;padding: 10px 0;}
 .business-list-main    li a{color: #686A6E;font-size: 14px;padding: 10px 30px;display: block;position: relative;}
-.business-list-main  .business-menu  li  a:hover,.business-menu-active{background-color: #EBECF1;}
+.sub-sector-div li a:focus,.business-list-main  .business-menu  li  a:focus,.business-list-main  .business-menu  li  a:hover,.business-menu-active{background-color: #EBECF1;}
 .business-list-main  .business-menu  li  a::after{color: #AFAFAF;}
 .business-list-main .business-sub-menu li a::after{content: none;}
 .business-list-main .business-sub-menu{display: none;}
@@ -521,6 +522,7 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .form-width{max-width: 760px;}
 .listing-bottom-btns{margin: 50px 0 -80px;}
 #upload-photo,#upload-document {position: absolute;z-index: -1;display: none;}
+#customFile,#photograph{opacity: 0;position: absolute;height: 100%;width: 100%;cursor: pointer;top:0;}
 .continue-btn.save-btn{width: auto;padding: 0 20px;}
 .upload-button.form-btn{margin: 0;cursor: pointer;font-family: 'open_sansregular';}
 .pd-0{padding: 0;}
@@ -573,8 +575,9 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .right-sell-grid{border-radius: 25px;-webkit-border-radius: 25px;-ms-border-radius: 25px;-o-border-radius: 25px;-moz-border-radius: 25px;}
 .product-name.recent-insight{min-height: 145px;}
 .product-name.recent-insight h3{line-height: 26px;margin-bottom: 15px;}
-.product-name.recent-insight p{color: #747474;    display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;text-overflow: ellipsis;}
+.product-name.recent-insight p{color: #747474;  -webkit-line-clamp: 1;}
 .step-btn{min-width: 230px;height: 45px;line-height: 45px;}
+.business-worth-list li p,.product-name.recent-insight p{display: -webkit-box;-webkit-box-orient: vertical;text-overflow: ellipsis;}
 /*****************Sell a business ************************/
 
 /****************  Buy a business ************************/
@@ -583,9 +586,28 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .seller-pic.right-business{background-position: -80px -370px;}
 .seller-pic.offer-pic{background-position: -151px -367px;}
 .seller-pic.financing{background-position: -219px -367px;}
-.learning-banner-sec{min-height: 500px;background-color: #4B9CEC;}
+
 
 /****************  Buy a business ************************/
+
+.learning-banner-sec{min-height: 490px;background-color: #4B9CEC;}
+.row-md{margin: 0 -30px;}
+.row-md > div{padding: 0 30px;}
+.learning-main{background-color: #ffffff;margin-bottom: 15px;}
+.learning-main .form-btn{height: 45px;line-height: 45px;padding: 0;margin:15px 0 0;}
+.business-worth-list li p,.inner-sell-section p{color:#747474;font-size: 14px; }
+.inner-sell-section p{min-height: 75px;}
+.business-worth-list li{margin-bottom: 23px;padding:10px;}
+.learning-side-form{background-color: #F4F5F8;border-radius: 31px;padding: 25px 35px;}
+.custom-inputs.sidebar-inputs,select.custom-inputs.sidebar-inputs{background-color: #fff;color: #B0B5BC;font-family: 'open_sansregular';border: 1px solid #6C829917;}
+.learning-side-form select.custom-inputs + i,.learning-side-form .input-fileds i{bottom: auto;top: 12px;}
+.learning-side-form  .title-sm{font-size: 20px;}
+.learning-side-form  form{padding-top: 30px;}
+.learning-sidebar-main{padding-left: 40px;}
+.inner-sell-section,.business-worth-list li{border-radius: 20px;}
+.inner-sell-section{background-color: #f9f9f9;padding: 45px 35px;height: 100%;}
+.inner-sell-section a{min-width: 120px;height: 40px;line-height: 38px;}
+.business-worth-list li p{ -webkit-line-clamp: 4;overflow: hidden;}
 /****************** Media Queries **************************/
 @media only screen and (max-width: 1200px)
 {
@@ -611,7 +633,7 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 }
 @media only screen and (max-width: 991px)
 {  
-    .wrapper,.wrapper-md{padding: 0 15px;}
+    .wrapper,.wrapper-md,.wrapper-sm{padding: 0 15px;}
     .header-menu .nav-item .inner-menu-bar {color: #000;}
     .banner-tabs-outer .nav-item{width: 50%;}
     .navbar-toggler[aria-expanded="true"] .icon-bar{background: #000;}
@@ -638,8 +660,8 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
     .business-account-wrapper{justify-content: center;}
     .custom-row.dashboard-cards > div{flex: 50%;max-width: 50%;}
     .edge-member .row > div {margin-bottom: 75px;}
-    .custom-row{margin: 0 -15px;}
-    .custom-row.dashboard-cards > div{padding: 0 15px;}
+   .row-md, .custom-row{margin: 0 -15px;}
+  .learning-sidebar-main, .row-md > div, .custom-row.dashboard-cards > div{padding: 0 15px;}
     .recomended-sec h2, .edge-member h2{font-size: 20px;}
     .buyer-sidebar-main{padding: 20px 10px;}
     .outer-steps{justify-content: center;}
@@ -695,8 +717,9 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .business-list-main .business-sub-menu{top: 100%;left: 0;margin-top: 20px;}    
 .black-heading.title-lg{font-size: 25px;}
 .title-md{font-size: 22px;}
-.Valuation-top-sec{height: auto;padding: 15px;}
+.business-worth-descrp,.Valuation-top-sec{height: auto;padding: 15px;}
 .Valuation-top-sec img{max-width: 250px;height: auto;}
+
 }
    
 @media only screen and (max-width: 480px)
