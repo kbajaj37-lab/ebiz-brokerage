@@ -573,7 +573,7 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .sell-list li{position: relative;padding-left: 25px;line-height: 30px;}
 .sell-list li::before{position: absolute;left: 0;height: 15px;width: 15px;background-position: -392px -25px;top: 0;bottom: 0;margin: auto;}
 .right-sell-grid{border-radius: 25px;-webkit-border-radius: 25px;-ms-border-radius: 25px;-o-border-radius: 25px;-moz-border-radius: 25px;}
-.product-name.recent-insight{min-height: 145px;}
+.product-name.recent-insight{min-height: 145px;align-items: initial;}
 .product-name.recent-insight h3{line-height: 26px;margin-bottom: 15px;}
 .product-name.recent-insight p{color: #747474;  -webkit-line-clamp: 1;}
 .step-btn{min-width: 230px;height: 45px;line-height: 45px;}
@@ -590,14 +590,14 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 
 /****************  Buy a business ************************/
 
-.learning-banner-sec{min-height: 490px;background-color: #4B9CEC;}
+.learning-banner-sec{background-color: #4B9CEC;padding: 50px 0 60px;}
 .row-md{margin: 0 -30px;}
 .row-md > div{padding: 0 30px;}
 .learning-main{background-color: #ffffff;margin-bottom: 15px;}
 .learning-main .form-btn{height: 45px;line-height: 45px;padding: 0;margin:15px 0 0;}
 .business-worth-list li p,.inner-sell-section p{color:#747474;font-size: 14px; }
 .inner-sell-section p{min-height: 75px;}
-.business-worth-list li{margin-bottom: 23px;padding:10px;}
+.business-worth-list li{margin-bottom: 23px;padding:10px 30px 10px 10px;}
 .learning-side-form{background-color: #F4F5F8;border-radius: 31px;padding: 25px 35px;}
 .custom-inputs.sidebar-inputs,select.custom-inputs.sidebar-inputs{background-color: #fff;color: #B0B5BC;font-family: 'open_sansregular';border: 1px solid #6C829917;}
 .learning-side-form select.custom-inputs + i,.learning-side-form .input-fileds i{bottom: auto;top: 12px;}
@@ -608,6 +608,24 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .inner-sell-section{background-color: #f9f9f9;padding: 45px 35px;height: 100%;}
 .inner-sell-section a{min-width: 120px;height: 40px;line-height: 38px;}
 .business-worth-list li p{ -webkit-line-clamp: 4;overflow: hidden;}
+/********************* Blogs Listing********************************/
+.blogs-listing-tabs .nav-tabs{padding: 15px 0 10px;}
+.blogs-listing-tabs .nav-tabs .nav-item .nav-link{border: none;position: relative;}
+.blogs-listing-tabs a.nav-link.active::after{width: 100%;height: 4px;left:0;background-color: #5C9EE0;bottom: -11px;border-radius: 2px;-webkit-border-radius: 2px;-ms-border-radius: 2px;-o-border-radius: 2px;-moz-border-radius: 2px;}
+.blogs-listing-tabs .nav-tabs .nav-item .nav-link::before{height: 20px;background-color: #D9D9D9;width: 1px;right: 0;top: 0;bottom: 0;margin: auto;display: inline-block;}
+.blogs-listing-tabs .nav-tabs .nav-item .nav-link::before,.blogs-listing-tabs a.nav-link.active::after{content: '';position: absolute;}
+.blogs-listing-tabs .nav-tabs .nav-item .nav-link:focus,.blogs-listing-tabs .nav-tabs .nav-item .nav-link:hover{color: #5C9EE0;}
+.blogs-listing-tabs .nav-tabs .nav-item .nav-link.border-right-zero::before{content: none;}
+.news-right-grid,.business-worth-right-grid{flex-basis: 70%;max-width: 70%;padding-left: 30px;}
+.business-worth-list li{cursor: default;}
+.business-worth-descrp h3 a:hover{color: #d89d3f;}
+ul.business-worth-list.blog-list li p{-webkit-line-clamp:2;}
+.blogs-links a{margin-left: 5px;}
+.footer-social-links.blog-links::after,.footer-social-links.blog-links::before{content: none;}
+.footer-social-links.blog-links a.twitter{background-color: #60C0EB;}
+.footer-social-links.blog-links a.insta{background-color: #F58247;}
+.footer-social-links.blog-links a.linkedin-icon{background-color:#5B8CBE;}
+/********************* Blogs Listing********************************/
 /****************** Media Queries **************************/
 @media only screen and (max-width: 1200px)
 {
@@ -719,7 +737,12 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .title-md{font-size: 22px;}
 .business-worth-descrp,.Valuation-top-sec{height: auto;padding: 15px;}
 .Valuation-top-sec img{max-width: 250px;height: auto;}
-
+.business-worth-right-grid{flex-basis: 100%;max-width: 100%;}
+.business-worth-right-grid{padding-left: 0;}
+.business-main-grid,.news-main-grid{flex-wrap: wrap;}
+.business-worth-left-grid{width: 100%;}
+.learning-banner-sec{padding: 20px 0;}
+.business-worth-list li{padding: 10px;}
 }
    
 @media only screen and (max-width: 480px)
@@ -740,5 +763,6 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
     .form-outer{padding: 25px 15px;border-radius: 20px;}
     .outer-steps{flex-wrap: wrap;flex-direction: column;-ms-flex-direction:column;}
     .steps-name::after{content: none;}
+    .learning-btns a.step-btn{width: 100%;margin: 5px 0;}
 }
 /****************** Media Queries **************************/
