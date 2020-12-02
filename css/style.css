@@ -276,7 +276,7 @@ p:empty {display: none;}
 .left-padding{padding-left: 60px;}
 .bottom-head-txt{line-height: 1.7;}
 input.custom-inputs::-webkit-input-placeholder{color: #B0B5BC;font-family: 'open_sansregular';}
-.category-list li::before,.sell-list li::before,.seller-pic,.buyer-sidebar-main ul li a span::after,.edge-video-sec::after,.pencil-icon,.heart-icon,.search-icon,.inner-dashboard-card::after,.social-login-icon,.inner-busines-type::after{content: '';background-image: url('../images/ebiz-sprite.png');display: inline-block;}
+.payment-option::after,.debit-card::before,.paypal::before,.category-list li::before,.sell-list li::before,.seller-pic,.buyer-sidebar-main ul li a span::after,.edge-video-sec::after,.pencil-icon,.heart-icon,.search-icon,.inner-dashboard-card::after,.social-login-icon,.inner-busines-type::after{content: '';background-image: url('../images/ebiz-sprite.png');display: inline-block;}
 /************** Common Css **************/
 .header-menu .nav-item a{font-size: 15px;margin: 0 10px;}
 .header-menu .nav-item a:hover{color: #D89D3F;}
@@ -318,7 +318,7 @@ input.custom-inputs::-webkit-input-placeholder{color: #B0B5BC;font-family: 'open
 .help-descrp,.product-name,.Category-name{padding: 15px;}
 .product-name > p{padding-right: 30px;font-size: 15px;}
 .help-img-sec img,.Category-img img{transition:.3s linear;-webkit-transition:.3s linear;-ms-transition:.3s linear;-o-transition:.3s linear;-moz-transition:.3s linear;}
-.learning-img,.Category-img,.help-img-sec,.listing-img,.business-img,.business-worth-img{border-radius: 15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;-o-border-radius: 15px;-ms-border-radius: 15px;overflow: hidden;}
+.learning-img,.Category-img,.help-img-sec,.listing-img,.business-img,.business-worth-img,.blog-detail-img{border-radius: 15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;-o-border-radius: 15px;-ms-border-radius: 15px;overflow: hidden;}
 .help-img-sec:hover img,.Category-img:hover img{transform: scale(1.3);-ms-transform: scale(1.3);-webkit-transform: scale(1.3);-moz-transform: scale(1.3);-o-transform: scale(1.3);}
 .business-right-grid a:last-child{margin: 0 10px;}
 .spl-txt{margin: 30px 0 0 0;}
@@ -543,6 +543,22 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .inner-listing-sec{padding: 0 35px;}
 .steps-name.done-step::after,.steps-name.done-step{background-color: #D89D3F;color: #fff;}
 .listing-main-form.second-step-form textarea{height: 80px;resize: none;}
+.listing-tables tr td{font-family: 'open_sansregular';font-size: 16px;border: none;}
+.listing-tables tr th{border: none;}
+.listing-tables tr.btm-row-border {border-bottom: 1px solid #ddd;}
+.listing-tables tr.footer-border{border-top:1px solid #ddd;border-bottom: 1px solid #ddd;}
+.footer-border{position: absolute;bottom: 0;width: 100%;}
+.table-txt{font-size: 20px;}
+.step-inner-form{background: #E8EAEE;height: 100%;padding:30px 40px;border-radius: 10px;}
+.payment-option{height: 52px;background-color: #fff;border-radius: 10px;line-height: 52px;font-size: 14px;font-family: 'open_sansregular';font-size: 14px;}
+.payment-option.active-payment-option{background-color:#5C9EE0;color: #fff;}
+.debit-card,.paypal{padding-top: 10px;}
+.debit-card::before,.paypal::before{height: 16px;width: 20px;vertical-align: middle;margin: 5px 5px 5px 0;}
+.debit-card::before{background-position: -341px -333px;}
+.paypal::before{background-position: -262px -335px; height: 15px;width: 16px;}
+.payment-option::after{height: 16px;width: 16px;position: absolute;right: 5px;background-position: -286px -333px;top: 5px;}
+.payment-option.grey-tick::after{background-position:  -314px -333px;}
+.step-inner-form .custom-inputs{background-color: #fff;border:1px solid #6C829917;}
 /****************** Create listing  ************************/
 
 /*****************Business Valuation **********************/
@@ -601,7 +617,7 @@ select.custom-inputs::after{content: "\f0d7";font-family: 'FontAwesome';position
 .learning-side-form{background-color: #F4F5F8;border-radius: 31px;padding: 25px 35px;}
 .custom-inputs.sidebar-inputs,select.custom-inputs.sidebar-inputs{background-color: #fff;color: #B0B5BC;font-family: 'open_sansregular';border: 1px solid #6C829917;}
 .learning-side-form select.custom-inputs + i,.learning-side-form .input-fileds i{bottom: auto;top: 12px;}
-.learning-side-form  .title-sm{font-size: 20px;}
+.learning-side-form  .title-sm,.step-inner-form .title-sm{font-size: 20px;}
 .learning-side-form  form{padding-top: 30px;}
 .learning-sidebar-main{padding-left: 40px;}
 .inner-sell-section,.business-worth-list li{border-radius: 20px;}
@@ -626,7 +642,6 @@ ul.business-worth-list.blog-list li p{-webkit-line-clamp:2;}
 .footer-social-links.blog-links a.insta{background-color: #F58247;}
 .footer-social-links.blog-links a.linkedin-icon{background-color:#5B8CBE;}
 /********************* Blogs Listing********************************/
-.blog-detail-img{border-radius: 15px;overflow: hidden;}
 .blog-detail-main h2,.blog-detail-main h1{text-transform: none;}
 .blog-detail-main h2{font-size: 28px;}
 .blog-detail-main h1{margin-bottom: 30px;line-height: 1.8;}
@@ -661,7 +676,7 @@ ul.business-worth-list.blog-list li p{-webkit-line-clamp:2;}
     .dash-right-sec {padding: 50px 0 0 0;}
     .buyer-sidebar-main{border:none;overflow-y: auto}
     .listing-blue-btn.theme-blue-btn{display: inline-block;width: auto;}
-    .learning-side-form{padding: 25px;}
+    .learning-side-form,.step-inner-form{padding: 25px;}
 }
 @media only screen and (max-width: 991px)
 {  
@@ -699,7 +714,7 @@ ul.business-worth-list.blog-list li p{-webkit-line-clamp:2;}
     .outer-steps{justify-content: center;}
     .steps-name::after{width: 95px;}
     .blogs-main{padding-top: 20px;}
-
+    .footer-border{position: static;}
    
 }
 
