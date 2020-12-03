@@ -232,6 +232,7 @@ p:empty {display: none;}
 .outline-main{margin-bottom: -425px;min-height: 100%;}
 .text-20{font-size: 20px;}
 .push{height: 425px;}
+.font-40.title-lg{font-size: 40px;}
 .common-space{padding: 60px 0;}
 .theme-blue-btn{border: 2px solid transparent;background-color:#5C9EE0;min-width: 270px;padding: 12px 20px;color: #fff;text-align: center;display: inline-block;}
 .sign-in-nav,.theme-yellow-btn{border:2px solid transparent;background-color:#d89d3f;display: inline-block;height: 38px;line-height: 34px;min-width: 100px;text-align: center;color: #fff;}
@@ -318,7 +319,7 @@ input.custom-inputs::-webkit-input-placeholder{color: #B0B5BC;font-family: 'open
 .help-descrp,.product-name,.Category-name{padding: 15px;}
 .product-name > p{padding-right: 30px;font-size: 15px;}
 .help-img-sec img,.Category-img img{transition:.3s linear;-webkit-transition:.3s linear;-ms-transition:.3s linear;-o-transition:.3s linear;-moz-transition:.3s linear;}
-.learning-img,.Category-img,.help-img-sec,.listing-img,.business-img,.business-worth-img,.blog-detail-img{border-radius: 15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;-o-border-radius: 15px;-ms-border-radius: 15px;overflow: hidden;}
+.seller-step-img img,.learning-img,.Category-img,.help-img-sec,.listing-img,.business-img,.business-worth-img,.blog-detail-img{border-radius: 15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;-o-border-radius: 15px;-ms-border-radius: 15px;overflow: hidden;}
 .help-img-sec:hover img,.Category-img:hover img{transform: scale(1.3);-ms-transform: scale(1.3);-webkit-transform: scale(1.3);-moz-transform: scale(1.3);-o-transform: scale(1.3);}
 .business-right-grid a:last-child{margin: 0 10px;}
 .spl-txt{margin: 30px 0 0 0;}
@@ -642,19 +643,33 @@ ul.business-worth-list.blog-list li p{-webkit-line-clamp:2;}
 .footer-social-links.blog-links a.insta{background-color: #F58247;}
 .footer-social-links.blog-links a.linkedin-icon{background-color:#5B8CBE;}
 /********************* Blogs Listing********************************/
-.blog-detail-main h2,.blog-detail-main h1{text-transform: none;}
-.blog-detail-main h2{font-size: 28px;}
-.blog-detail-main h1{margin-bottom: 30px;line-height: 1.8;}
+.blog-detail-main h2,.blog-detail-main h1,.step-one-left-gird h2.title-md{text-transform: none;}
+.blog-detail-main h2,.sm-head.title-md{font-size: 28px;}
+.blog-detail-main h1,.step-one-left-gird > h2.title-md {margin-bottom: 30px;line-height: 1.8;}
 .medium-lightgrey{color: #747474;font-size: 16px;font-family: 'open_sansregular';}
 .blog-detail-main .footer-social-links a{margin-left: 5px;}
 .posted-date-sec{border-bottom: 1px solid #ddd;}
-.blog-detail-main  p{padding: 20px 0;line-height: 1.8;margin: 0;}
+.blog-detail-main  p,.step-one-left-gird p{padding: 20px 0;line-height: 1.8;margin: 0;color: #000000;}
 .top-btm-brder{border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;padding: 20px 0;}
 .category-list{margin-bottom: 50px;}
 .category-list li a{font-size: 16px;display: inline-block;}
 .category-list li {padding-left: 25px;position: relative;line-height: 2.6;}
 .category-list li::before{position: absolute;height: 15px;width: 15px;left: 0;background-position: -444px -26px;top: 0;bottom: 0;margin: auto;}
 /****************** Media Queries **************************/
+
+
+/****************** Seller learning step one ***************/
+.seller-steps-outer{padding: 60px 0 70px;}
+.banner-txt,.seller-step-list li{font-family: 'open_sansregular';}
+.banner-txt{font-size: 24px;color: #fff;}
+.step-banner-sec{padding: 38px;background: url('../images/step-banner.jpg') no-repeat;}
+.seller-step-list li{color: #000000;line-height: 3;font-size: 14px;padding-left: 50px;position: relative;}
+.seller-step-list li span{z-index: 1;position: absolute;height: 23px;width: 23px;line-height: 23px;border-radius: 50px;color: #787878;background-color: #fff;text-align: center;font-family: 'open_sansbold';left: 0;top: 0;bottom: 0;margin: auto;-webkit-border-radius: 50px;-ms-border-radius: 50px;-o-border-radius: 50px;-moz-border-radius: 50px;}
+.seller-step-list li::after{top: 10px;left: 10px;z-index: 0;content: '';height: 100%;width: 2px;background: #D8D8D8;display: inline-block;position: absolute;}
+.seller-step-list li:last-child::after{content: none;}
+.seller-step-list li span.active-seller{background-color: #5C9EE0;color: #fff;}
+
+/****************** Seller learning step one ***************/
 @media only screen and (max-width: 1200px)
 {
     .brokers-main-sec .custom-row{margin:  0 -15px;}
@@ -697,10 +712,10 @@ ul.business-worth-list.blog-list li p{-webkit-line-clamp:2;}
     .nav-btns{margin-left: 0;margin-right: 30px;}
     .brokers-main-sec .custom-row{flex-wrap: wrap;justify-content: center;}
     .brokers-main-sec .custom-row > div,.learning-row.buy-business-row >div, .blogs-listing-tabs .nav-tabs .nav-item{flex-basis: 33%;max-width: 33%;margin-bottom: 15px;}
-    .edge-member.dashboard-space,.dashboard-space,.common-space{padding: 30px 0;}
+    .edge-member.dashboard-space,.dashboard-space,.common-space,.seller-steps-outer{padding: 30px 0;}
     .title-md{font-size: 28px;}
     .diamond-shape{right: 0;}
-    .black-heading.title-lg{font-size: 30px;}
+    .black-heading.title-lg,.font-40.title-lg{font-size: 30px;}
     .user-sign-left-grid{padding: 80px 0 0 0;}
     .banner-main-grid.left-padding{padding-left: 0px;}
     .bottom-form-requirements{white-space: normal;}
@@ -733,11 +748,11 @@ ul.business-worth-list.blog-list li p{-webkit-line-clamp:2;}
  .black-heading.title-lg{margin-bottom: 10px;}
  .user-sign-right-grid::after{z-index: -1;content: '';height: 100%;width: 100%;background: rgba(0,0,0,0.2);position: absolute;border-radius: 50px 0px 0px 50px;-webkit-border-radius: 50px 0px 0px 50px;-ms-border-radius: 50px 0px 0px 50px;-o-border-radius: 50px 0px 0px 50px;-moz-border-radius: 50px 0px 0px 50px;}
  .banner-listing ul li{font-size: 14px;}
- .banner-listing h3,.blog-detail-main h1{margin-bottom: 10px;}
+ .banner-listing h3,.blog-detail-main h1,.step-one-left-gird > h2.title-md{margin-bottom: 10px;}
  .mobile-spacing{padding-left: 0;}
 .facebook-login.form-btn, .google-login.form-btn,.form-btn{margin-top: 15px;}
 .user-sign-left-grid{padding: 30px 0;}
-.blog-detail-main p{padding: 10px 0;}
+.blog-detail-main p,.step-one-left-gird p{padding: 10px 0;}
 .custom-row.dashboard-cards > div{flex: 100%;max-width: 100%;}
 .custom-row-spacing.custom-row.dashboard-brokers-main{margin-top: 100px;}
 .dashboard-brokers-main .slick-arrow{left: 0;right: 0;margin: auto;}
@@ -752,11 +767,11 @@ ul.business-worth-list.blog-list li p{-webkit-line-clamp:2;}
 .business-list-main{height: 100%;}
 .Valuation-btm-sec a.form-btn{width: 90%;margin: 10px;}
 .seller-learning-center h3{margin-top: 30px;}
-.seller-learning-center{padding: 25px 15px;}
+.seller-learning-center,.step-banner-sec{padding: 25px 15px;}
 .seller-learning-center,.product-name.recent-insight{min-height: auto;}
 .row.learning-row > div,.learning-row.buy-business-row >div{margin: 0 0 20px;}
-.blog-detail-main h1,.blog-detail-main h2{line-height: normal;}
-p{font-size: 15px;}
+.blog-detail-main h1,.blog-detail-main h2,.step-one-left-gird > h2.title-md{line-height: normal;}
+p,.banner-txt{font-size: 15px;}
 }
 @media only screen and (max-width: 575px){
 .dashboard-brokers-main .inner-block-grid{margin: 0 15px;}
@@ -767,8 +782,8 @@ p{font-size: 15px;}
 .steps-name{height: 40px;width: 40px;line-height: 40px;}
 .steps-type{font-size: 15px;}
 .business-list-main .business-sub-menu{top: 100%;left: 0;margin-top: 20px;}    
-.black-heading.title-lg{font-size: 25px;}
-.title-md,.blog-detail-main h2{font-size: 22px;}
+.black-heading.title-lg,.font-40.title-lg{font-size: 25px;}
+.title-md,.blog-detail-main h2,.step-one-left-gird h2.title-md,.step-banner-sec h1{font-size: 22px;}
 .business-worth-descrp,.Valuation-top-sec{height: auto;padding: 15px;}
 .Valuation-top-sec img{max-width: 250px;height: auto;}
 .business-worth-right-grid,.blogs-listing-tabs .nav-tabs .nav-item{flex-basis: 100%;max-width: 100%;}
