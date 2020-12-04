@@ -692,6 +692,8 @@ ul.business-worth-list.blog-list li p{-webkit-line-clamp:2;}
     .buyer-sidebar-main{border:none;overflow-y: auto}
     .listing-blue-btn.theme-blue-btn{display: inline-block;width: auto;}
     .learning-side-form,.step-inner-form{padding: 25px;}
+    .seller-step-list li{padding-left: 35px;line-height: 2.3;}
+    .seller-step-list li::after{top: 22px;}
 }
 @media only screen and (max-width: 991px)
 {  
